@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.fxml.ContrForAuth">
+   <children>
+      <Text fx:id="text" layoutX="388.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Репетиторство" textAlignment="CENTER" AnchorPane.topAnchor="81.0">
+         <font>
+            <Font name="Calibri" size="36.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tfLogin" layoutX="254.0" layoutY="153.0" prefHeight="54.0" prefWidth="492.0" promptText="Login" visible="false">
+         <effect>
+            <DropShadow height="12.0" offsetX="1.5" offsetY="1.5" radius="5.5" width="12.0" />
+         </effect>
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </TextField>
+      <Button fx:id="bEnter" layoutX="552.0" layoutY="371.0" mnemonicParsing="false" onAction="#enter" prefHeight="60.0" prefWidth="270.0" style="-fx-background-color: #1579FF;" text="Вход" visible="false">
+         <effect>
+            <DropShadow color="#000000aa" height="12.0" offsetX="1.5" offsetY="1.5" radius="5.5" width="12.0" />
+         </effect>
+         <font>
+            <Font name="Calibri" size="28.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="pfPassword" layoutX="254.0" layoutY="262.0" prefHeight="54.0" prefWidth="492.0" promptText="Password" visible="false">
+         <effect>
+            <DropShadow height="12.0" offsetX="1.5" offsetY="1.5" radius="5.5" width="12.0" />
+         </effect>
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </PasswordField>
+      <ImageView fitHeight="112.0" fitWidth="200.0">
+         <image>
+            <Image url="@ЕГЭ_Выбор_будущего!.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="bRegister" layoutX="144.0" layoutY="371.0" mnemonicParsing="false" onAction="#entered" prefHeight="60.0" prefWidth="270.0" style="-fx-background-color: #DFEEFF;" text="Регистрация" visible="false">
+         <effect>
+            <DropShadow color="#000000aa" height="12.0" offsetX="1.5" offsetY="1.5" radius="5.5" width="12.0" />
+         </effect>
+         <font>
+            <Font name="Calibri" size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="bParent" layoutX="292.0" layoutY="135.0" mnemonicParsing="false" onAction="#parentPress" prefHeight="60.0" prefWidth="416.0" style="-fx-background-color: #1579FF;" text="Войти как родитель">
+         <effect>
+            <DropShadow color="#000000aa" height="12.0" offsetX="1.5" offsetY="1.5" radius="5.5" width="12.0" />
+         </effect>
+         <font>
+            <Font name="Calibri" size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="bLearner" layoutX="292.0" layoutY="220.0" mnemonicParsing="false" onAction="#learnerPress" prefHeight="60.0" prefWidth="416.0" style="-fx-background-color: #1579FF;" text="Войти как ученик">
+         <effect>
+            <DropShadow color="#000000aa" height="12.0" offsetX="1.5" offsetY="1.5" radius="5.5" width="12.0" />
+         </effect>
+         <font>
+            <Font name="Calibri" size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="bTeacher" layoutX="292.0" layoutY="305.0" mnemonicParsing="false" onAction="#teacherPress" prefHeight="60.0" prefWidth="416.0" style="-fx-background-color: #1579FF;" text="Войти как учитель">
+         <effect>
+            <DropShadow color="#000000aa" height="12.0" offsetX="1.5" offsetY="1.5" radius="5.5" width="12.0" />
+         </effect>
+         <font>
+            <Font name="Calibri" size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="bTechnical" layoutX="292.0" layoutY="390.0" mnemonicParsing="false" onAction="#techPress" prefHeight="60.0" prefWidth="416.0" style="-fx-background-color: #1579FF;" text="Техническая панель">
+         <effect>
+            <DropShadow color="#000000aa" height="12.0" offsetX="1.5" offsetY="1.5" radius="5.5" width="12.0" />
+         </effect>
+         <font>
+            <Font name="Calibri" size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="bBack" layoutX="948.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #1579FF;" text="&lt;" visible="false">
+         <effect>
+            <DropShadow color="#000000aa" height="12.0" offsetX="1.5" offsetY="1.5" radius="5.5" width="12.0" />
+         </effect>
+         <font>
+            <Font name="Calibri" size="28.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

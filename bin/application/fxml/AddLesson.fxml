@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #EBF3FF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.fxml.AddLesson">
+   <children>
+      <Text layoutX="162.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добавить занятие">
+         <font>
+            <Font name="Roboto Medium Regular" size="32.0" />
+         </font>
+      </Text>
+      <Text layoutX="50.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Предмет" textAlignment="RIGHT" wrappingWidth="110.5218505859375">
+         <font>
+            <Font name="Roboto Light Regular" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="96.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Время">
+         <font>
+            <Font name="Roboto Light Regular" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textfieldsubject" layoutX="204.0" layoutY="115.0" prefHeight="34.0" prefWidth="316.0" />
+      <TextField fx:id="textfieldtime" layoutX="204.0" layoutY="169.0" prefHeight="34.0" prefWidth="316.0" />
+      <Button fx:id="buttonaddlesson" cache="true" depthTest="DISABLE" layoutX="221.0" layoutY="411.0" mnemonicParsing="false" onAction="#addLessonAction" prefHeight="41.0" prefWidth="158.0" style="-fx-background-color: #1579FF;" text="Добавить">
+         <font>
+            <Font name="Roboto Light Regular" size="20.0" />
+         </font>
+      </Button>
+      <Text layoutX="50.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Учитель" textAlignment="RIGHT" wrappingWidth="110.5218505859375">
+         <font>
+            <Font name="Roboto Light Regular" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="30.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Место проведения" textAlignment="RIGHT" wrappingWidth="132.0816650390625">
+         <font>
+            <Font name="Roboto Light Regular" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textfieldteacher" layoutX="204.0" layoutY="222.0" prefHeight="34.0" prefWidth="316.0" />
+      <TextField fx:id="textfieldplaceinschedule" layoutX="204.0" layoutY="277.0" prefHeight="34.0" prefWidth="316.0" />
+      <Text layoutX="94.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Статус">
+         <font>
+            <Font name="Roboto Light Regular" size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="textfieldstatus" layoutX="204.0" layoutY="331.0" prefHeight="34.0" prefWidth="316.0" />
+   </children>
+</AnchorPane>
